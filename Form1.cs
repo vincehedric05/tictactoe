@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tictactoe
 {
-    public partial class Form1 : Form
+    public partial class TicTacToe : Form
     {
-        public Form1()
+        public TicTacToe()
         {
             InitializeComponent();
         }
@@ -183,6 +183,38 @@ namespace tictactoe
                 counter = counter + 1;
                 button9.Enabled = false;
             }
+        }
+
+        private void reset_button(object sender, EventArgs e)
+        {
+            counter = 1;
+
+            button1.Text = " ";
+            button1.Enabled = true;
+
+            button2.Text = " ";
+            button2.Enabled = true;
+
+            button3.Text = " ";
+            button3.Enabled = true;
+
+            button4.Text = " ";
+            button4.Enabled = true;
+
+            button5.Text = " ";
+            button5.Enabled = true;
+
+            button6.Text = " ";
+            button6.Enabled = true;
+
+            button7.Text = " ";
+            button7.Enabled = true;
+
+            button8.Text = " ";
+            button8.Enabled = true;
+
+            button9.Text = " ";
+            button9.Enabled = true;
         }
     }
 }
