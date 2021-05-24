@@ -156,11 +156,12 @@ namespace tictactoe
             // winner_label
             // 
             this.winner_label.AutoSize = true;
+            this.winner_label.Font = new System.Drawing.Font("Copperplate Gothic Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.winner_label.Location = new System.Drawing.Point(16, 9);
             this.winner_label.Name = "winner_label";
-            this.winner_label.Size = new System.Drawing.Size(38, 15);
+            this.winner_label.Size = new System.Drawing.Size(100, 16);
             this.winner_label.TabIndex = 10;
-            this.winner_label.Text = "label1";
+            this.winner_label.Text = "Tic Tac Toe";
             // 
             // TicTacToe
             // 
