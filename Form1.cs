@@ -16,12 +16,8 @@ namespace tictactoe
         {
             InitializeComponent();
         }
-        int counter = 1;
 
-        public void Counter()
-        {
-            int counter = 1;
-        }
+        int counter = 1;
 
         private void button1_click(object sender, EventArgs e)
         {
@@ -367,7 +363,7 @@ namespace tictactoe
             }
 
             // 123
-            else if (button1.Text == "O" && button2.Text == "O" && button3.Text == "0")
+            else if (button1.Text == "O" && button2.Text == "O" && button3.Text == "O")
             {
                 winner_label.Text = "O Wins";
 
