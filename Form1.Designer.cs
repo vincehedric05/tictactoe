@@ -66,6 +66,7 @@ namespace tictactoe
             this.button3.Size = new System.Drawing.Size(70, 70);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_click);
             // 
             // button4
             // 
@@ -74,6 +75,7 @@ namespace tictactoe
             this.button4.Size = new System.Drawing.Size(70, 70);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_click);
             // 
             // button5
             // 
@@ -82,6 +84,7 @@ namespace tictactoe
             this.button5.Size = new System.Drawing.Size(70, 70);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_click);
             // 
             // button6
             // 
@@ -90,6 +93,7 @@ namespace tictactoe
             this.button6.Size = new System.Drawing.Size(70, 70);
             this.button6.TabIndex = 5;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_click);
             // 
             // button7
             // 
@@ -98,6 +102,7 @@ namespace tictactoe
             this.button7.Size = new System.Drawing.Size(70, 70);
             this.button7.TabIndex = 6;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_click);
             // 
             // button8
             // 
@@ -106,6 +111,7 @@ namespace tictactoe
             this.button8.Size = new System.Drawing.Size(70, 70);
             this.button8.TabIndex = 7;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_click);
             // 
             // button9
             // 
@@ -114,6 +120,7 @@ namespace tictactoe
             this.button9.Size = new System.Drawing.Size(70, 70);
             this.button9.TabIndex = 8;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_click);
             // 
             // button10
             // 
@@ -121,7 +128,7 @@ namespace tictactoe
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(222, 70);
             this.button10.TabIndex = 9;
-            this.button10.Text = "button10";
+            this.button10.Text = "Reset";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // Form1
