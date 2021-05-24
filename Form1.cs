@@ -18,12 +18,15 @@ namespace tictactoe
         }
 
         int counter = 1;
+        int x = 0;
+        int o = 0;
 
+        // input
         private void button1_click(object sender, EventArgs e)
         {
             int odd_even = counter % 2;
 
-            if (odd_even == 0)
+            if (odd_even == 1)
             {
                 button1.Text = "X";
                 counter = counter + 1;
@@ -43,7 +46,7 @@ namespace tictactoe
         {
             int odd_even = counter % 2;
 
-            if (odd_even == 0)
+            if (odd_even == 1)
             {
                 button2.Text = "X";
                 counter = counter + 1;
@@ -63,7 +66,7 @@ namespace tictactoe
         {
             int odd_even = counter % 2;
 
-            if (odd_even == 0)
+            if (odd_even == 1)
             {
                 button3.Text = "X";
                 counter = counter + 1;
@@ -83,7 +86,7 @@ namespace tictactoe
         {
             int odd_even = counter % 2;
 
-            if (odd_even == 0)
+            if (odd_even == 1)
             {
                 button4.Text = "X";
                 counter = counter + 1;
@@ -103,7 +106,7 @@ namespace tictactoe
         {
             int odd_even = counter % 2;
 
-            if (odd_even == 0)
+            if (odd_even == 1)
             {
                 button5.Text = "X";
                 counter = counter + 1;
@@ -123,7 +126,7 @@ namespace tictactoe
         {
             int odd_even = counter % 2;
 
-            if (odd_even == 0)
+            if (odd_even == 1)
             {
                 button6.Text = "X";
                 counter = counter + 1;
@@ -143,7 +146,7 @@ namespace tictactoe
         {
             int odd_even = counter % 2;
 
-            if (odd_even == 0)
+            if (odd_even == 1)
             {
                 button7.Text = "X";
                 counter = counter + 1;
@@ -163,7 +166,7 @@ namespace tictactoe
         {
             int odd_even = counter % 2;
 
-            if (odd_even == 0)
+            if (odd_even == 1)
             {
                 button8.Text = "X";
                 counter = counter + 1;
@@ -183,7 +186,7 @@ namespace tictactoe
         {
             int odd_even = counter % 2;
 
-            if (odd_even == 0)
+            if (odd_even == 1)
             {
                 button9.Text = "X";
                 counter = counter + 1;
@@ -199,6 +202,7 @@ namespace tictactoe
             }
         }
 
+        // reset
         private void reset_button(object sender, EventArgs e)
         {
             counter = 1;
@@ -230,14 +234,19 @@ namespace tictactoe
             button9.Text = " ";
             button9.Enabled = true;
 
-            winner_label.Text = "Tic Tac Toe";
+            winner_label.Text = "Have Fun!";
         }
+
+        // win
         public void Winner()
         {
             // 123
             if (button1.Text == "X" && button2.Text == "X" && button3.Text == "X")
             {
                 winner_label.Text = "X Wins";
+
+                x = x + 1;
+                x_counter.Text = x.ToString();
 
                 button1.Enabled = false;
                 button2.Enabled = false;
@@ -255,6 +264,9 @@ namespace tictactoe
             {
                 winner_label.Text = "X Wins";
 
+                x = x + 1;
+                x_counter.Text = x.ToString();
+
                 button1.Enabled = false;
                 button2.Enabled = false;
                 button3.Enabled = false;
@@ -270,6 +282,9 @@ namespace tictactoe
             else if (button7.Text == "X" && button8.Text == "X" && button9.Text == "X")
             {
                 winner_label.Text = "X Wins";
+
+                x = x + 1;
+                x_counter.Text = x.ToString();
 
                 button1.Enabled = false;
                 button2.Enabled = false;
@@ -287,6 +302,9 @@ namespace tictactoe
             {
                 winner_label.Text = "X Wins";
 
+                x = x + 1;
+                x_counter.Text = x.ToString();
+
                 button1.Enabled = false;
                 button2.Enabled = false;
                 button3.Enabled = false;
@@ -302,6 +320,9 @@ namespace tictactoe
             else if (button2.Text == "X" && button5.Text == "X" && button8.Text == "X")
             {
                 winner_label.Text = "X Wins";
+
+                x = x + 1;
+                x_counter.Text = x.ToString();
 
                 button1.Enabled = false;
                 button2.Enabled = false;
@@ -319,6 +340,9 @@ namespace tictactoe
             {
                 winner_label.Text = "X Wins";
 
+                x = x + 1;
+                x_counter.Text = x.ToString();
+
                 button1.Enabled = false;
                 button2.Enabled = false;
                 button3.Enabled = false;
@@ -334,6 +358,9 @@ namespace tictactoe
             else if (button1.Text == "X" && button5.Text == "X" && button9.Text == "X")
             {
                 winner_label.Text = "X Wins";
+
+                x = x + 1;
+                x_counter.Text = x.ToString();
 
                 button1.Enabled = false;
                 button2.Enabled = false;
@@ -351,6 +378,9 @@ namespace tictactoe
             {
                 winner_label.Text = "X Wins";
 
+                x = x + 1;
+                x_counter.Text = x.ToString();
+
                 button1.Enabled = false;
                 button2.Enabled = false;
                 button3.Enabled = false;
@@ -366,6 +396,9 @@ namespace tictactoe
             else if (button1.Text == "O" && button2.Text == "O" && button3.Text == "O")
             {
                 winner_label.Text = "O Wins";
+
+                o = o + 1;
+                o_counter.Text = o.ToString();
 
                 button1.Enabled = false;
                 button2.Enabled = false;
@@ -383,6 +416,9 @@ namespace tictactoe
             {
                 winner_label.Text = "0 Wins";
 
+                o = o + 1;
+                o_counter.Text = o.ToString();
+
                 button1.Enabled = false;
                 button2.Enabled = false;
                 button3.Enabled = false;
@@ -398,6 +434,9 @@ namespace tictactoe
             else if (button7.Text == "O" && button8.Text == "O" && button9.Text == "O")
             {
                 winner_label.Text = "O Wins";
+
+                o = o + 1;
+                o_counter.Text = o.ToString();
 
                 button1.Enabled = false;
                 button2.Enabled = false;
@@ -415,6 +454,9 @@ namespace tictactoe
             {
                 winner_label.Text = "X Wins";
 
+                o = o + 1;
+                o_counter.Text = o.ToString();
+
                 button1.Enabled = false;
                 button2.Enabled = false;
                 button3.Enabled = false;
@@ -430,6 +472,9 @@ namespace tictactoe
             else if (button2.Text == "O" && button5.Text == "O" && button8.Text == "O")
             {
                 winner_label.Text = "O Wins";
+
+                o = o + 1;
+                o_counter.Text = o.ToString();
 
                 button1.Enabled = false;
                 button2.Enabled = false;
@@ -447,6 +492,9 @@ namespace tictactoe
             {
                 winner_label.Text = "O Wins";
 
+                o = o + 1;
+                o_counter.Text = o.ToString();
+
                 button1.Enabled = false;
                 button2.Enabled = false;
                 button3.Enabled = false;
@@ -463,6 +511,9 @@ namespace tictactoe
             {
                 winner_label.Text = "O Wins";
 
+                o = o + 1;
+                o_counter.Text = o.ToString();
+
                 button1.Enabled = false;
                 button2.Enabled = false;
                 button3.Enabled = false;
@@ -478,6 +529,9 @@ namespace tictactoe
             else if (button3.Text == "O" && button5.Text == "O" && button7.Text == "O")
             {
                 winner_label.Text = "O Wins";
+
+                o = o + 1;
+                o_counter.Text = o.ToString();
 
                 button1.Enabled = false;
                 button2.Enabled = false;
