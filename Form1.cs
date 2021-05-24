@@ -491,7 +491,7 @@ namespace tictactoe
             }
 
             // draw
-            else if (counter == 9)
+            else if (counter == 10)
             {
                 winner_label.Text = "Draw";
 
